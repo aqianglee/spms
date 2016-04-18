@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="BorderPage.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="DefaultTable.css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<header>
+		<div class="title">软件项目管理系统</div>
+		<div class="shopKeeperInfo_messages"></div>
+		<div style="clear: both;"></div>
+	</header>
+	<div>
+		<wicket:extend>
+			<div style="padding: 10px;">
+				<a href="Desktop.html" class="btn btn-primary">返 回</a>
+			</div>
+			<div class="panel panel-default" style="padding: 30px; margin: 10px;">
+				<table>
+					<thead>
+						<tr>
+							<th width="600">项目名称</th>
+							<th>创建时间</th>
+							<th>客户</th>
+							<th>团队</th>
+						</tr>
+					</thead>
+					<tbody wicket:id="projectsTab">
+						<tr wicket:id="projects">
+							<td>
+								<a wicket:id="manageIssue" href="ManageIssues.html">
+									<span wicket:id="name">毕业设计管理系统</span>
+								</a>
+							</td>
+							<td wicket:id="createTime">2015-05-20</td>
+							<td wicket:id="customer.name">青海大学计算机系</td>
+							<td wicket:id="team.name"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</wicket:extend>
+	</div>
+	<footer>
+		<div class="pageButtom" align="center">青海大学 &copy; 版权所有</div>
+	</footer>
+</body>
+</html>
